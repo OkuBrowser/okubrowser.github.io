@@ -1,0 +1,56 @@
+name: Publish
+on:
+  push:
+    branches: [ "master" ]
+env:
+  CARGO_TERM_COLOR: always
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  build_site:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get dependency information
+        run: |
+            gh api /repos/emmyoh/vox/commits/master --jq '.sha' > vox_rev
+            curl https://crates.io/api/v1/crates/grass > grass_rev
+      - name: Restore Cargo cache
+        id: cache-cargo
+        uses: actions/cache@v1
+        with:
+            path: ~/.cargo
+            key: ${{ runner.os }}-cargo-${{ hashFiles('vox_rev', 'grass_rev') }}
+            restore-keys: |
+                ${{ runner.os }}-cargo-${{ hashFiles('vox_rev', 'grass_rev') }}
+      - if: ${{ steps.cache-cargo.outputs.cache-hit != 'true' }}
+        name: Install Grass and Vox
+        run: |
+            rustup update nightly && rustup default nightly
+            time cargo install grass
+            time cargo install --git https://github.com/emmyoh/vox --features="cli"
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+      - name: Generate stylesheet
+        run: |
+          ./prebuild.sh
+      - name: Build site
+        run: |
+          vox build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+            path: "output/"
+  deploy_site:
+    needs: build_site
+    name: Deploy site to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

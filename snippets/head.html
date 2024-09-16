@@ -1,0 +1,18 @@
+<title>
+    {% if page.data.title %}
+        {{ page.data.title }} &middot; {{ global.title }}
+    {% else %}
+        {{ global.title }}{% if global.description %} &middot; {{ global.description }}{% endif %}
+    {% endif %}
+</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ global.description }}">
+
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+<link rel="stylesheet" href="{{ global.url }}/css/main.css">

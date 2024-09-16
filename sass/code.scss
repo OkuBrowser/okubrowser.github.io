@@ -1,0 +1,15 @@
+code,
+pre {
+    font-family: var(--code-font);
+}
+
+code {
+    font-size: 85%;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: var(--spacer-3);
+    overflow: auto;
+}

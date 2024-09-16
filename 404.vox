@@ -1,0 +1,12 @@
+---
+layout = "default"
+title = "Page not found"
+permalink = "404.html"
+---
+
+{% markdown %}
+
+# Page not found
+Return to the [home page]({{ global.url }}).
+
+{% endmarkdown %}

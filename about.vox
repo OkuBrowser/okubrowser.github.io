@@ -1,0 +1,10 @@
+---
+layout = "default"
+permalink = "about.html"
+---
+
+{% markdown %}
+
+Oku is a browser with an emphasis on local-first data storage.
+
+{% endmarkdown %}

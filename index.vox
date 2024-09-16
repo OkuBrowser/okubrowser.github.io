@@ -1,0 +1,22 @@
+---
+layout = "index"
+permalink = "index.html"
+---
+
+{% markdown %}
+
+# Making browsing *fun* again.
+
+# *Your* data on *your* machine.
+
+# Let your garden grow wild.
+
+# Not Google Chrome in disguise.
+
+---
+
+# Looking to contribute?
+
+[Learn more about Oku →]({{ global.url }}/about.html)
+
+{% endmarkdown %}
