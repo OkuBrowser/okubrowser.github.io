@@ -1,7 +1,7 @@
 name: Publish
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 env:
   CARGO_TERM_COLOR: always
   GH_TOKEN: ${{ github.token }}

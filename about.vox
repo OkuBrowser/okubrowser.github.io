@@ -5,6 +5,43 @@ permalink = "about.html"
 
 {% markdown %}
 
-Oku is a browser with an emphasis on local-first data storage.
+[← Back to home page]({{ global.url }})
+
+Oku is a browser with an emphasis on local-first data storage.\
+It comes with a unique peer-to-peer protocol that enables:
+
+* Creating & publishing media without hosting fees
+* Sharing files directly with friends
+* Storing personal data on the devices you control
+* Synchronising files between your devices
+
+Using Oku, you can create *replicas*, which are in essence sharable drives.
+Replicas can hold files & folders, and can be shared and retrieved by their IDs.
+Unless the author of a replica shares a key allowing that replica to be modified, that replica can only be viewed.
+
+---
+
+## Disclaimers & FAQs
+
+> Does this have anything to do with cryptocurrencies or 'blockchain'?
+
+No.
+
+> Is this ready to be my default browser?
+
+No. Oku is still actively in development.
+
+> Is this a derivative of Google Chrome?
+
+No. Oku uses WebKit, the same browser engine found in Safari.
+
+> What platforms does Oku support?
+
+Currently, Oku is only available on operating systems using the Linux kernel.
+
+> What does the name mean?
+
+'Oku' is a place that poet Matsuo Bashō arrived at after a long journey. It was simply a name I'd stumbled upon when beginning development on the browser.
+The name itself does not carry much personal significance; if it has any problematic associations I'm unaware of, please let me know and I will rename the project.
 
 {% endmarkdown %}
