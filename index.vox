@@ -7,16 +7,24 @@ permalink = "index.html"
 
 # Making browsing *fun* again.
 
+Make & share your own Web sites.
+
 # *Your* data on *your* machine.
+
+Let sites keep your information with you, not on servers they control.
 
 # Let your garden grow wild.
 
+Build your own space on the Internet, independent from any platforms.
+
 # Not Google Chrome in disguise.
+
+Powered by WebKit, Oku is an escape from Google's influence on browser technology and complies with the latest Web standards.
 
 ---
 
 # Looking to contribute?
 
-[Learn more about Oku →]({{ global.url }}/about.html)
+[Learn more about Oku →]({{ global.url }}/about)
 
 {% endmarkdown %}

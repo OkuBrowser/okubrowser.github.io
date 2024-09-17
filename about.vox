@@ -1,6 +1,6 @@
 ---
 layout = "default"
-permalink = "about.html"
+permalink = "about/index.html"
 ---
 
 {% markdown %}
@@ -16,7 +16,7 @@ It comes with a unique peer-to-peer protocol that enables:
 * Synchronising files between your devices
 
 Using Oku, you can create *replicas*, which are in essence sharable drives.
-Replicas can hold files & folders, and can be shared and retrieved by their IDs.
+Replicas can hold files & folders, and can be shared & retrieved by their IDs.
 Unless the author of a replica shares a key allowing that replica to be modified, that replica can only be viewed.
 
 ---

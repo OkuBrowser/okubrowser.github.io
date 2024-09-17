@@ -7,6 +7,7 @@ pre,
 table,
 ul {
     color: var(--body-color);
+    text-shadow: var(--text-shadow);
 }
 
 h1,
@@ -19,6 +20,7 @@ h6 {
     font-weight: 700;
     line-height: 1.25;
     color: var(--heading-color);
+    text-shadow: var(--text-shadow);
 }
 
 h1 {

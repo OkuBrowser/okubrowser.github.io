@@ -32,23 +32,27 @@
     --spacer: 1rem;
     --spacer-2: calc(var(--spacer) * 1.5);
     --spacer-3: calc(var(--spacer) * 3);
-    --body-bg: linear-gradient(var(--pico-color-red-400), var(--pico-color-red-500), var(--pico-color-red-400));
+    --body-bg: radial-gradient(var(--pico-color-red-400), var(--pico-color-red-500), var(--pico-color-red-400));
     --body-bg-color: var(--pico-color-red-500);
     --body-color: var(--gray-800);
     --link-color: var(--pico-color-pink-500);
     --link-hover-color: var(--pico-color-pink-650);
     --heading-color: var(--gray-900);
     --border-color: var(--gray-700);
+    --container-bg: rgba(255, 255, 255, 0.45);
+    --text-shadow: var(--gray-800) 0px 0px 0.33px;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --body-bg: linear-gradient(var(--pico-color-violet-950), var(--pico-color-violet-50), var(--pico-color-violet-950));
-        --body-bg-color: var(--pico-color-violet-950);
+        --body-bg: radial-gradient(var(--pico-color-violet-750), var(--pico-color-violet-600), var(--pico-color-violet-500));
+        --body-bg-color: var(--pico-color-violet-750);
         --body-color: var(--gray-000);
         --link-color: var(--pico-color-amber-250);
-        --link-hover-color: var(--pico-color-amber-350);
+        --link-hover-color: var(--pico-color-amber-200);
         --heading-color: var(--gray-000);
         --border-color: var(--gray-300);
+        --container-bg: rgba(255, 255, 255, 0.33);
+        --text-shadow: var(--gray-200) 0px 0px 0.66px;
     }
 }
