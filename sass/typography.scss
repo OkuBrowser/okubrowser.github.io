@@ -7,7 +7,6 @@ pre,
 table,
 ul {
     color: var(--body-color);
-    text-shadow: var(--text-shadow);
 }
 
 h1,
@@ -16,11 +15,11 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "Poppins", sans-serif;
     margin-bottom: .5rem;
     font-weight: 700;
     line-height: 1.25;
     color: var(--heading-color);
-    text-shadow: var(--text-shadow);
 }
 
 h1 {
@@ -44,10 +43,18 @@ h6 {
     font-size: 1rem;
 }
 
+em {
+    font-family: "Tenor Sans", sans-serif;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 600;
+}
+
+ul {
+    text-align: initial;
 }
 
 ul,

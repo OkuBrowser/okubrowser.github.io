@@ -1,4 +1,5 @@
 :root {
+    font-family: var(--body-font);
     font-feature-settings: 'liga' 1, 'calt' 1;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -8,7 +9,7 @@
 
 @supports (font-variation-settings: normal) {
     :root {
-        font-family: "InterVariable", sans-serif;
+        font-family: "InterVariable", var(--body-font);
     }
 }
 

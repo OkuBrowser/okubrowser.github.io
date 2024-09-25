@@ -10,7 +10,7 @@ permalink = "about/index.html"
 Oku is a browser with an emphasis on local-first data storage.\
 It comes with a unique peer-to-peer protocol that enables:
 
-* Creating & publishing media without hosting fees
+* Creating & publishing sites
 * Sharing files directly with friends
 * Storing personal data on the devices you control
 * Synchronising files between your devices
@@ -37,7 +37,13 @@ No. Oku uses WebKit, the same browser engine found in Safari.
 
 > What platforms does Oku support?
 
-Currently, Oku is only available on operating systems using the Linux kernel.
+Currently, the Oku browser is only available on operating systems using the Linux kernel.
+
+The protocol included with Oku may be used via a command-line frontend, available on Linux, macOS, and Windows.
+
+> Where can I learn more about the protocol?
+
+To learn more about the protocol, visit [the code repository]({{ global.protocol_repository }}).
 
 > What does the name mean?
 

@@ -16,6 +16,11 @@ html {
   background-attachment: fixed;
 }
 
+.main-screenshot {
+  content: var(--main-screenshot);
+  width: 100%;
+}
+
 .center {
   text-align: center;
   align-items: center;
