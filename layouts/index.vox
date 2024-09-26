@@ -14,5 +14,6 @@
         <small>
             &copy; {{ global.author }} <time datetime="{{ meta.date.rfc_2822 }}">{{ meta.date.year }}</time>
         </small>
+        {% include sponsor.html %}
     </footer>
 </html>
