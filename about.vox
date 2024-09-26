@@ -23,6 +23,12 @@ Unless the author of a replica shares a key allowing that replica to be modified
 
 ## Disclaimers & FAQs
 
+> Who are you? What is this?
+
+My name is Emil. I've been working on Oku on-and-off for the past four years.
+Inspired by the [IndieWeb movement](https://indieweb.org), I decided to create Oku with the hope that it'd enable an alternative to the Web where people own both their data and their space online.
+The best way to ['rewild the Internet'](https://www.noemamag.com/we-need-to-rewild-the-internet) is by making it easier than ever to contribute to it.
+
 > Does this have anything to do with cryptocurrencies or 'blockchain'?
 
 No.
@@ -44,6 +50,35 @@ The protocol included with Oku may be used via a command-line frontend, availabl
 > Where can I learn more about the protocol?
 
 To learn more about the protocol, visit [the code repository]({{ global.protocol_repository }}).
+
+> How can I help? What still needs to be worked on?
+
+As of writing, there are several major short-term development tasks:
+* Implementing a history manager, a password manager, and bookmarks
+* Adding support for browser extensions
+
+Long-term significant goals include, but are not limited to:
+* Expanding the protocol to include decentralised computation in addition to decentralised storage
+* Supporting more platforms, such as macOS and Windows
+    * Note: The biggest obstacle to this is WebKitGTK being long-unmaintained for non-Linux platforms. If another browser engine, such as [Servo](https://servo.org), receives a GTK port, switching browser engines may enable this.
+
+To help out the development effort, please visit the code repositories:
+- [Browser]({{ global.browser_repository }})
+- [Protocol]({{ global.protocol_repository }})
+
+> I found a security vulnerability. How do I report this? Do you do bug bounties?
+
+Please refer to the [security policy]({{ global.browser_repository }}/blob/master/SECURITY.md) for up-to-date reporting guidelines.
+
+Unfortunately, I cannot offer financial rewards for reporting security vulnerabilities, as I am unemployed.
+
+> How does this compare to [Beaker Browser](https://en.wikipedia.org/wiki/Beaker_(web_browser))?
+
+Beaker Browser was a Chromium-based Web browser that incorporated the [Dat protocol](https://en.wikipedia.org/wiki/Dat_(software)) with the primary aim of enabling peer-to-peer static site sharing. To this end, Oku is similar; in fact, Beaker Browser was part of the inspiration to create Oku. The two projects diverge in their long-term ambitions, however; Oku intends on:
+- Exploring peer-to-peer compute, not just storage
+- Enabling media creation, not just distribution
+- Challenging established browser conventions, in terms of feature set, UI design, and technologies
+- Eventually, becoming the daily-driver browser for everyday people
 
 > What does the name mean?
 
