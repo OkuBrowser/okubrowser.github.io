@@ -15,18 +15,24 @@ jobs:
             gh api /repos/emmyoh/vox/commits/master --jq '.sha' > vox_rev
             curl https://crates.io/api/v1/crates/grass > grass_rev
       - name: Restore Cargo cache
-        id: cache-cargo
-        uses: actions/cache@v1
+        id: cache-cargo-restore
+        uses: actions/cache/restore@v4
         with:
             path: ~/.cargo
             key: ${{ runner.os }}-cargo-${{ hashFiles('vox_rev', 'grass_rev') }}
             restore-keys: |
                 ${{ runner.os }}-cargo-${{ hashFiles('vox_rev', 'grass_rev') }}
-      - if: ${{ steps.cache-cargo.outputs.cache-hit != 'true' }}
+      - if: ${{ steps.cache-cargo-restore.outputs.cache-hit != 'true' }}
         name: Install Grass and Vox
         run: |
             time cargo install grass
             time cargo install --git https://github.com/emmyoh/vox --features="cli"
+      - if: ${{ steps.cache-cargo-restore.outputs.cache-hit != 'true' }}
+        name: Save Cargo cache
+        uses: actions/cache/save@v4
+        with:
+            path: ~/.cargo
+            key: ${{ runner.os }}-cargo-${{ hashFiles('vox_rev', 'grass_rev') }}
       - name: Checkout codebase
         uses: actions/checkout@v4
       - name: Generate stylesheet
