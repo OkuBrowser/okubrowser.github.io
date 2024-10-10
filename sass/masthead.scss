@@ -1,0 +1,23 @@
+.masthead {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+    margin-bottom: var(--spacer-2);
+}
+
+.masthead small:not(:last-of-type)::after {
+    content: " • ";
+}
+
+.masthead-title {
+    margin-bottom: 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    small {
+        font-weight: 400;
+        opacity: .5;
+    }
+}

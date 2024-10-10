@@ -1,3 +1,14 @@
+#skip {
+  position: absolute;
+  top: -1000%;
+  left: -1000%;
+}
+
+#skip:focus {
+  top: 10px;
+  left: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
