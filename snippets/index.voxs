@@ -6,7 +6,7 @@
         {{ post.data.title }}
       </a>
     </h1>
-    {% if post.date %}
+    {% if post.date.rfc_2822 %}
     <time datetime="{{ post.date.rfc_2822 }}" class="post-date">{{ post.date.short_day }}, {{ post.date.day }} {{ post.date.short_month }} {{ post.date.year }}</time>
     {% endif %}
   </article>
@@ -20,7 +20,7 @@
         {{ post.data.title }}
       </a>
     </h1>
-    {% if post.date %}
+    {% if post.date.rfc_2822 %}
     <time datetime="{{ post.date.rfc_2822 }}" class="post-date">{{ post.date.short_day }}, {{ post.date.day }} {{ post.date.short_month }} {{ post.date.year }}</time>
     {% endif %}
     {{ post.rendered }}

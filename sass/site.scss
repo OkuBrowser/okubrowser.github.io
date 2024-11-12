@@ -27,9 +27,80 @@ html {
   background-attachment: fixed;
 }
 
+.bookmarks-screenshot {
+  content: var(--bookmarks-screenshot);
+}
+
+.find-in-page-screenshot {
+  content: var(--find-in-page-screenshot);
+}
+
+.history-screenshot {
+  content: var(--history-screenshot);
+}
+
+.menu-screenshot {
+  content: var(--menu-screenshot);
+}
+
+.note-editor-screenshot {
+  content: var(--note-editor-screenshot);
+}
+
+.okunet-home-empty-screenshot {
+  content: var(--okunet-home-empty-screenshot);
+}
+
+.okunet-me-screenshot {
+  content: var(--okunet-me-screenshot);
+}
+
+.page-screenshot {
+  content: var(--page-screenshot);
+}
+
+.replicas-screenshot {
+  content: var(--replicas-screenshot);
+}
+
+.settings-screenshot {
+  content: var(--settings-screenshot);
+}
+
+.shortcuts-page1-screenshot {
+  content: var(--shortcuts-page1-screenshot);
+}
+
+.shortcuts-page2-screenshot {
+  content: var(--shortcuts-page2-screenshot);
+}
+
+.tab-overview-screenshot {
+  content: var(--tab-overview-screenshot);
+}
+
+.writing-note-screenshot {
+  content: var(--writing-note-screenshot);
+}
+
 .main-screenshot {
   content: var(--main-screenshot);
+}
+
+.screenshot {
+  display: block;
+  margin: auto;
+}
+
+.side-screenshot {
   width: 100%;
+}
+
+.icon {
+  display: inline;
+  margin: 0;
+  padding: 4px;
+  background-color: var(--body-color);
 }
 
 .center {

@@ -1,0 +1,50 @@
+---
+title = "Keyboard Shortcuts"
+layout = "post"
+permalink = "none"
+---
+
+<div style="display: flex;">
+    <img class="shortcuts-page1-screenshot side-screenshot"></img>
+    <img class="shortcuts-page2-screenshot side-screenshot"></img>
+</div>
+
+{% markdown %}
+## Navigation
+* Go home: `Alt` + `Home`
+* Go back: `Alt` + `←` / `Alt` + `Left (keypad)` / `Ctrl` + `[`
+* Go forward: `Alt` + `→` / `Alt` + `Right (keypad)` / `Ctrl` + `]`
+* Stop loading: `Escape`
+* Refresh page: `Ctrl` + `R` / `F5`
+* Refresh page, bypassing cache: `Shift` + `Ctrl` + `R` / `Shift` + `F5`
+* Open file: `Ctrl` + `O`
+
+## Tabs
+* Create new tab: `Ctrl` + `T`
+* Close current tab: `Ctrl` + `W`
+* Switch to next tab: `Ctrl` + `Page Down` / `Ctrl` + `Tab`
+* Switch to previous tab: `Ctrl` + `Page Up` / `Shift` + `Ctrl` + `Tab`
+* Move current tab left: `Shift` + `Ctrl` + `Page Up`
+* Move current tab right: `Shift` + `Ctrl` + `Page Down`
+* Duplicate current tab: `Shift` + `Ctrl` + `K`
+* Toggle tab overview: `Shift` + `Ctrl` + `O`
+
+## View
+* Zoom in: `Shift` + `Ctrl` + `+`
+* Zoom out: `Ctrl` + `-`
+* Reset zoom level: `Ctrl` + `0`
+* Toggle fullscreen: `F11`
+
+## General
+* Print current page: `Ctrl` + `P`
+* Save current page: `Ctrl` + `S`
+* Take screenshot: `Shift` + `Ctrl` + `S`
+* View page source: `Ctrl` + `U`
+* New window: `Ctrl` + `N`
+* New private window: `Shift` + `Ctrl` + `P`
+* Close window: `Ctrl` + `Q` / `Shift` + `Ctrl` + `W`
+* Show inspector: `Shift` + `Ctrl` + `I` / `F12`
+* Toggle library: `Ctrl` + `D`
+* Open settings: `Ctrl` + `,`
+* View keyboard shortcuts: `Shift` + `Ctrl` + `?`
+{% endmarkdown %}

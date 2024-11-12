@@ -1,0 +1,22 @@
+---
+title = "Menu"
+layout = "post"
+permalink = "none"
+---
+
+<img class="menu-screenshot screenshot"></img>
+
+{% markdown %}
+The **browser menu** {% include icon.html name="menu" %} provides a variety of features, including:
+* Zooming out {% include icon.html name="zoom-out" %}
+* Zooming in {% include icon.html name="zoom-in" %}
+* Resetting zoom {% include icon.html name="zoom-original" %}
+* Entering & exiting fullscreen {% include icon.html name="fullscreen-rectangular" %} / {% include icon.html name="unfullscreen-rectangular" %}
+* Printing the current page {% include icon.html name="printer" %}
+* Screenshotting the current page {% include icon.html name="screenshot-recorded" %}
+* Opening a new window {% include icon.html name="window-new" %}
+* Opening a new private window {% include icon.html name="screen-privacy7" %}
+* Viewing keyboard shortcuts {% include icon.html name="keyboard-shortcuts" %}
+* Opening the browser settings {% include icon.html name="settings" %}
+* Viewing information about the browser {% include icon.html name="info-outline" %}
+{% endmarkdown %}

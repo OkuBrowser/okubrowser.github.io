@@ -3,8 +3,7 @@ layout = "index"
 permalink = "index.html"
 ---
 
-<div class="main-screenshot">
-</div>
+<img class="main-screenshot screenshot"></img>
 
 {% markdown %}
 

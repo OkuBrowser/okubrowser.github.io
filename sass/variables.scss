@@ -40,7 +40,21 @@
     --heading-color: var(--gray-900);
     --border-color: var(--gray-700);
     --container-bg: rgba(255, 255, 255, 0.45);
-    --main-screenshot: url('/assets/light.png');
+    --bookmarks-screenshot: url('/assets/screenshots/light/bookmarks.png');
+    --find-in-page-screenshot: url('/assets/screenshots/light/find_in_page.png');
+    --history-screenshot: url('/assets/screenshots/light/history.png');
+    --menu-screenshot: url('/assets/screenshots/light/menu.png');
+    --note-editor-screenshot: url('/assets/screenshots/light/note_editor.png');
+    --okunet-home-empty-screenshot: url('/assets/screenshots/light/okunet_home_empty.png');
+    --okunet-me-screenshot: url('/assets/screenshots/light/okunet_me.png');
+    --page-screenshot: url('/assets/screenshots/light/page.png');
+    --replicas-screenshot: url('/assets/screenshots/light/replicas.png');
+    --settings-screenshot: url('/assets/screenshots/light/settings.png');
+    --shortcuts-page1-screenshot: url('/assets/screenshots/light/shortcuts_page1.png');
+    --shortcuts-page2-screenshot: url('/assets/screenshots/light/shortcuts_page2.png');
+    --tab-overview-screenshot: url('/assets/screenshots/light/tab_overview.png');
+    --writing-note-screenshot: url('/assets/screenshots/light/writing_note.png');
+    --main-screenshot: url('/assets/screenshots/light/main.png');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +67,20 @@
         --heading-color: var(--gray-000);
         --border-color: var(--gray-300);
         --container-bg: rgba(255, 255, 255, 0.33);
-        --main-screenshot: url('/assets/dark.png');
+        --bookmarks-screenshot: url('/assets/screenshots/dark/bookmarks.png');
+        --find-in-page-screenshot: url('/assets/screenshots/dark/find_in_page.png');
+        --history-screenshot: url('/assets/screenshots/dark/history.png');
+        --menu-screenshot: url('/assets/screenshots/dark/menu.png');
+        --note-editor-screenshot: url('/assets/screenshots/dark/note_editor.png');
+        --okunet-home-empty-screenshot: url('/assets/screenshots/dark/okunet_home_empty.png');
+        --okunet-me-screenshot: url('/assets/screenshots/dark/okunet_me.png');
+        --page-screenshot: url('/assets/screenshots/dark/page.png');
+        --replicas-screenshot: url('/assets/screenshots/dark/replicas.png');
+        --settings-screenshot: url('/assets/screenshots/dark/settings.png');
+        --shortcuts-page1-screenshot: url('/assets/screenshots/dark/shortcuts_page1.png');
+        --shortcuts-page2-screenshot: url('/assets/screenshots/dark/shortcuts_page2.png');
+        --tab-overview-screenshot: url('/assets/screenshots/dark/tab_overview.png');
+        --writing-note-screenshot: url('/assets/screenshots/dark/writing_note.png');
+        --main-screenshot: url('/assets/screenshots/dark/main.png');
     }
 }
