@@ -1,0 +1,22 @@
+<div class="gallery">
+  {% for post in include.posts %}
+  <a href="{{ post.url | prepend: "/" | prepend: global.url }}">
+    <article class="gallery-post container">
+      {% if post.data.screenshot %}
+      <figure>
+          <img class="{{ post.data.screenshot }}-screenshot screenshot" alt="{{ post.data.title }}">  
+      </figure>
+      {% endif %}
+      <h1 class="post-title">
+        {{ post.data.title }}{%- if post.data.icon %}&nbsp;{% include icon.html name=post.data.icon %}{%- endif -%}
+      </h1>
+      {% if post.date.rfc_2822 %}
+      <time datetime="{{ post.date.rfc_2822 }}" class="post-date">{{ post.date.short_day }}, {{ post.date.day }} {{ post.date.short_month }} {{ post.date.year }}</time>
+      {% endif %}
+      {% unless include.minimal %}
+      {{ post.rendered }}
+      {% endunless %}
+    </article>
+  </a>
+  {% endfor %}
+</div>

@@ -1,0 +1,28 @@
+---
+title = "OkuNet"
+layout = "post"
+permalink = "none"
+screenshot = "okunet-me"
+icon = "people"
+---
+
+<img class="okunet-me-screenshot screenshot"></img>
+
+{% markdown %}
+**OkuNet** {% include icon.html name="people" %} is a *social bookmarking* feature available within Oku.
+It allows you to discover new content online, including new [**replicas**]({{ global.url }}/guide/Replicas.html) {% include icon.html name="folder-remote" %}.
+
+## Getting Started
+
+<img class="okunet-home-empty-screenshot screenshot"></img>
+
+To create a profile, navigate to the **library** {% include icon.html name="library" %} and select one replica to be your **home replica** {% include icon.html name="user-home" %}; this will be where your posts and profile are saved.
+
+You may update your profile from the [**browser settings**]({{ global.url }}/guide/Settings.html) {% include icon.html name="settings" %}.
+Now, you may post [**notes**]({{ global.url }}/guide/Notes.html) {% include icon.html name="note" %} which will be visible to your followers.
+
+## Browsing
+
+Your home feed is populated by the content of *the users you follow & whoever they follow, minus users you've blocked*.
+In addition to the home feed, you may view posts by a *tag* that interests you (`oku:tag/<TAG>`), or you may navigate to a user's profile (`oku:<USER>`) directly.
+{% endmarkdown %}

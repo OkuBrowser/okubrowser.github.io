@@ -2,12 +2,14 @@
 title = "Notes"
 layout = "post"
 permalink = "none"
+screenshot = "note-editor"
+icon = "note"
 ---
 
 <img class="note-editor-screenshot screenshot"></img>
 
 {% markdown %}
-You can attach notes to pages for the purposes of creating **bookmarks** {% include icon.html name="bookmark-filled" %} _or_ **OkuNet posts** {% include icon.html name="people" %}.
+You can attach notes to pages for the purposes of creating **bookmarks** {% include icon.html name="bookmark-filled" %} _or_ **[OkuNet]({{ global.url }}/guide/OkuNet.html) posts** {% include icon.html name="people" %}.
 
 Notes, whether they be bookmarks or OkuNet posts, have a URL, an optional title, any number of tags, and an optional body.
 {% endmarkdown %}

@@ -1,0 +1,40 @@
+---
+title = "Settings"
+layout = "post"
+permalink = "none"
+screenshot = "settings"
+icon = "settings"
+---
+
+<img class="settings-screenshot screenshot"></img>
+
+{% markdown %}
+The **settings menu** {% include icon.html name="settings" %} allows you to set preferences regarding the browser's usage & operation.
+
+## Appearance
+
+From the settings menu, you may set the browser's *colour scheme*, whether to perform *colour cycling*, and the *browser colour*.
+
+If colour cycling is enabled, the browser's colour will be assigned based on the address of the currently visited page.
+If disabled, the user may pick from several pre-defined colours, including:
+* Blue {% include colour.html colour="blue" %}
+* Green {% include colour.html colour="green" %}
+* Yellow {% include colour.html colour="yellow" %}
+* Orange {% include colour.html colour="orange" %}
+* Red {% include colour.html colour="red" %}
+* Purple {% include colour.html colour="purple" %}
+* Brown {% include colour.html colour="brown" %}
+
+The colour scheme options are:
+* Automatic, which uses the system's colour scheme
+* Force Light {% include colour.html colour="light" %}
+* Prefer Light
+* Prefer Dark
+* Force Dark {% include colour.html colour="dark" %}
+
+## Replicas & OkuNet
+
+From the settings menu, you may **export your authorship credentials** {% include icon.html name="user-info" %} or **import authorship credentials** {% include icon.html name="system-switch-user" %}; if [**OkuNet**]({{ global.url }}/guide/OkuNet.html) {% include icon.html name="people" %} has been setup, the home replica will be exported & imported as well. This allows you to use the same credentials across multiple computers.
+
+Provided OkuNet is setup, one may set their display name from the settings menu as well.
+{% endmarkdown %}

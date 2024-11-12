@@ -1,0 +1,56 @@
+---
+title = "Browsing"
+layout = "post"
+permalink = "none"
+screenshot = "page"
+icon = "info-outline"
+---
+
+<img class="page-screenshot screenshot"></img>
+
+{% markdown %}
+From the browser window's header, you may:
+* Navigate backward {% include icon.html name="left" %}
+* Navigate forward {% include icon.html name="right" %}
+* Refresh the current page {% include icon.html name="arrow-circular-top-right" %}
+* Create a new tab {% include icon.html name="tab-new" %}
+* Open the **library** {% include icon.html name="library" %}
+* Enter an address
+* Open the tab overview
+* Leave a [**note**]({{ global.url }}/guide/Notes.html) {% include icon.html name="note" %}
+* Find text in the current page {% include icon.html name="edit-find" %}
+* View your [**replicas**]({{ global.url }}/guide/Replicas.html) in the file manager {% include icon.html name="file-cabinet" %}
+* Open the [**browser menu**]({{ global.url }}/guide/Menu) {% include icon.html name="menu" %}
+
+## Address Bar
+As you type, the address bar will suggest pages from your browser history, your [bookmarks]({{ global.url }}/guide/Notes.html), and from notes shared on [OkuNet]({{ global.url }}/guide/OkuNet.html).
+
+## History
+<img class="history-screenshot screenshot"></img>
+
+The browser history can be viewed in the library. You can revisit pages by clicking on their history entries.
+You may copy the addresses of history entries, or delete them.
+
+## Tabs
+<img class="tab-overview-screenshot screenshot"></img>
+
+When more than one tab is open, the tab bar is visible at the top of the browser window.
+Tabs can be pinned or unpinned, and can be muted or unmuted.
+Tabs can be dragged off a window to create a new browser window, and can be transferred between windows by dragging & dropping as well.
+
+The tab overview is another way to view your tabs, with a scrollable gallery showing live previews of the open tabs.
+It allows you to search for tabs, pin or unpin tabs, mute or unmute tabs, create new tabs, and drag & drop tabs as well.
+
+## Finding in Page
+<img class="find-in-page-screenshot screenshot"></img>
+
+You may find text in a page by typing in the text you're looking for and then navigating to the next {% include icon.html name="up" %} or previous {% include icon.html name="down" %} matches. The current match is highlighted in yellow, while others are highlighted in grey.
+
+There are several options for modifying the finding behaviour:
+* Case-insensitive matching {% include icon.html name="uppercase" %}
+* Matching text only at the start of words {% include icon.html name="first" %}
+    * Treating a capital letter in the middle of a word as a starting letter {% include icon.html name="text-underline" %}
+* Searching backwards {% include icon.html name="seek-backward" %}
+* Looping back to the beginning after the last match {% include icon.html name="loop-arrow" %}
+
+{% endmarkdown %}

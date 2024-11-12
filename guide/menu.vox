@@ -2,6 +2,8 @@
 title = "Menu"
 layout = "post"
 permalink = "none"
+screenshot = "menu"
+icon = "menu"
 ---
 
 <img class="menu-screenshot screenshot"></img>
@@ -16,7 +18,7 @@ The **browser menu** {% include icon.html name="menu" %} provides a variety of f
 * Screenshotting the current page {% include icon.html name="screenshot-recorded" %}
 * Opening a new window {% include icon.html name="window-new" %}
 * Opening a new private window {% include icon.html name="screen-privacy7" %}
-* Viewing keyboard shortcuts {% include icon.html name="keyboard-shortcuts" %}
-* Opening the browser settings {% include icon.html name="settings" %}
+* Viewing [**keyboard shortcuts**]({{ global.url }}/guide/Keyboard%20Shortcuts.html) {% include icon.html name="keyboard-shortcuts" %}
+* Opening the [**browser settings**](({{ global.url }}/guide/Settings.html)) {% include icon.html name="settings" %}
 * Viewing information about the browser {% include icon.html name="info-outline" %}
 {% endmarkdown %}

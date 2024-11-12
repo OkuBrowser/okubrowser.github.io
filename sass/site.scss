@@ -104,6 +104,34 @@ html {
   border-radius: 0;
 }
 
+.dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: thin solid var(--border-color);
+  display: inline-block;
+}
+
+.gallery {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+
+.gallery-post {
+  width: 16rem;
+  height: 16rem;
+}
+
+.gallery-post > figure {
+  height: 12rem;
+}
+
+.gallery-post > h1 {
+  height: 2rem;
+  font-size: 1.15em;
+}
+
 .center {
   text-align: center;
   align-items: center;

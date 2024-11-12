@@ -1,0 +1,43 @@
+---
+title = "Replicas"
+layout = "post"
+permalink = "none"
+screenshot = "replicas"
+icon = "folder-remote"
+---
+
+<img class="replicas-screenshot screenshot"></img>
+
+{% markdown %}
+A **replica** {% include icon.html name="folder-remote" %} is a folder that lives on your computer that can be shared with other Oku users.
+
+These folders can be opened in your computer's file manager {% include icon.html name="external-link" %} from the **library** {% include icon.html name="library" %}.
+
+Replicas are addressed by an ID, and can be shared with either an ID or a **ticket** {% include icon.html name="ticket" %}.
+
+## Viewing
+
+Similar to how addresses on the Web begin with `http://` or `https://`, replica addresses begin with `hive:`.
+These addresses take the form `hive:<REPLICA>/[PATH]`, whereas Web addresses take the form `http://<SERVER>/[PATH]`.
+
+A replica's ID never changes, and is used by your machine to discover *peers*---other Oku users---that can supply the content you're looking for.
+A disadvantage, however, is that peer discovery can take a while if a replica is difficult to find (ie, if few computers have a copy of it).
+
+To bypass peer discovery, you can request a temporary ticket from someone with a copy of the replica. This allows you to obtain the replica directly from their machine. This is useful when sharing a new replica you've made with people you know.
+
+## Collaborating
+
+Replicas can only be modified by their creators and anyone that receives a **write ticket** {% include icon.html name="ticket-special" %}.
+A write ticket can only be given by others with the write ticket (which includes the replica's creator), and cannot be revoked after they're given away; you should be careful when giving away write tickets.
+
+## Management
+
+Replicas can be managed from the library. From there, you may open replicas in the file manager, create replicas {% include icon.html name="folder-new" %}, create tickets, *fetch* replicas {% include icon.html name="arrow-pointing-at-line-down" %}, *refresh* replicas {% include icon.html name="update" %}, and delete replicas {% include icon.html name="user-trash" %}.
+
+### Fetching & Refreshing
+
+When you view content inside a replica, only the portion you've viewed is saved to your computer.
+If you wish to download the entire replica, you may *fetch* the replica from the library.
+
+To get the newest copy of only what you've last viewed, you may *refresh* the replica instead.
+{% endmarkdown %}

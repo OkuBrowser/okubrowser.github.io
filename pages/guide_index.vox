@@ -1,7 +1,7 @@
 ---
-layout = "default"
+layout = "gallery"
 depends = ["guide"]
 permalink = "guide/index.html"
 ---
-{% assign posts = guide | sort: "data.title" | reverse %}
-{% include index.voxs posts = posts minimal = true %}
+{% assign posts = guide | sort: "data.title" %}
+{% include guide.voxs posts = posts minimal = true %}
