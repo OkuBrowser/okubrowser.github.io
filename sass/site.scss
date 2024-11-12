@@ -93,14 +93,15 @@ html {
 }
 
 .side-screenshot {
-  width: 100%;
+  width: 50%;
 }
 
 .icon {
   display: inline;
   margin: 0;
-  padding: 4px;
+  padding: 8px;
   background-color: var(--body-color);
+  border-radius: 0;
 }
 
 .center {
