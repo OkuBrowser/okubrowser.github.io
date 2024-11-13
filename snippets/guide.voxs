@@ -1,4 +1,4 @@
-<div class="gallery">
+<div class="gallery center">
   {% for post in include.posts %}
   <a href="{{ post.url | prepend: "/" | prepend: global.url }}">
     <article class="gallery-post container">

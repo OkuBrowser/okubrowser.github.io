@@ -113,23 +113,24 @@ html {
 }
 
 .gallery {
-  display: inline-grid;
-  grid-template-columns: auto auto auto;
-  gap: 4em 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .gallery-post {
-  width: 18vw;
-  height: 18vw;
+  width: 12rem;
+  height: 12rem;
 }
 
 .gallery-post > figure {
-  height: 11vw;
+  height: 7.5rem;
 }
 
 .gallery-post > h1 {
-  height: 2vw;
-  font-size: 1.15vw;
+  height: 2rem;
+  font-size: 1rem;
 }
 
 .center {
