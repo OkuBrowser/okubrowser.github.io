@@ -115,21 +115,21 @@ html {
 .gallery {
   display: inline-grid;
   grid-template-columns: auto auto auto;
-  gap: 1rem;
+  gap: 4em 1rem;
 }
 
 .gallery-post {
-  width: 16rem;
-  height: 16rem;
+  width: 18vw;
+  height: 18vw;
 }
 
 .gallery-post > figure {
-  height: 12rem;
+  height: 11vw;
 }
 
 .gallery-post > h1 {
-  height: 2rem;
-  font-size: 1.15em;
+  height: 2vw;
+  font-size: 1.15vw;
 }
 
 .center {

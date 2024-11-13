@@ -1,5 +1,5 @@
 ---
-layout = "gallery"
+layout = "center"
 depends = ["guide"]
 permalink = "guide/index.html"
 ---
