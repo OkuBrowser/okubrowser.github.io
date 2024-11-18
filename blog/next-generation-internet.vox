@@ -1,0 +1,48 @@
+---
+title = "Envisioning the next generation Internet"
+date = 2024-11-18T00:00:00+00:00
+layout = "post"
+permalink = "date"
+---
+
+{% markdown %}
+
+## The Web
+
+The Internet has connected humanity to a degree never seen before. With that connectivity has come innovation *without permission*, interoperability of technologies, and open expression. As humanity has continued to harness the Internet, it has also further enabled efforts at social control. The enduring success of the Internet rests on the **empowerment of the individual**. To foster opportunities for disruption and increase the potential of innovation, diversity of thought \& decentralisation of intellectual capital are paramount concerns. For the common well-being of cultures \& economies globally, **human agency** must be supported; it ought to be easier to create, share, and find media without giving up our privacy. To that end, we must redefine how we interface with the Internet.
+
+The Web has withered due to the [pathology of command and control](http://dx.doi.org/10.5751/ES-08698-210333), from a rich ecosystem of diverse [hypermedia](https://en.wikipedia.org/wiki/Hypermedia) into patches of lawn for data harvesters to graze on. This loss of diversity has [affected all layers of the human-Internet interface](https://www.thinkingcat.com/wordpress/wp-content/uploads/2020/08/2019-InvariantsUpdated.pdf), from [Web browsers](https://www.theverge.com/2018/1/4/16805216/google-chrome-only-sites-internet-explorer-6-web-standards) down to the [infrastructure providers](https://www.statista.com/chart/18819/worldwide-market-share-of-leading-cloud-infrastructure-service-providers/). Incremental attempts at maintaining Internet diversity are not risk-forward, they're emblematic of a fixed mindset. As [online spaces become increasingly cultivated by powerful interests](https://tracking.exposed/pdf/tiktok-russia-15march2022.pdf), the solution is to introduce spaces for new diversity.
+
+Imagine if you could find media you didn't even know existed, without being at the mercy of someone capitalising on your browsing habits. This was once the norm online, and it can be again if information was tied to its authorship as Web content once was. Efforts to do this [aren't new](https://indieweb.org/), but run into [the same problem growing Web adoption did](https://jrashford.com/2024/08/21/mastodon-and-the-fediverse-have-a-big-problem-which-no-one-is-talking-about-2/): creating hypermedia and *hosting* hypermedia are completely orthogonal problems. [Various](https://scuttlebutt.nz/about/) [attempts](https://ipfs.tech/) [at](https://zeronet.io/) [reconciling](https://nostr.com/) [the](https://solidproject.org/) [two](https://www.hyphanet.org/index.html) have failed to cross the chasm of adoption from visionaries to pragmatists because they haven't succeeded in simultaneously addressing the two valuable use cases of the Internet: finding something that you've never seen before, and expressing yourself.
+
+## Oku
+
+Oku takes a new approach. It's a browser that builds a new space that coexists with the Web, one where sites are shared between peers and found through [social bookmarking](https://en.wikipedia.org/wiki/Social_bookmarking). Rather than either separating itself from the Web or building on top of it, Oku mixes the experience of browsing the Web and browsing what's available through its novel protocol. Sites live in folders called *replicas*, addressed by an ID. Anyone with this ID can construct URLs pointing to files in the replica, and a special ticket can be shared with trusted parties allowing them to modify the replica.
+
+You can find other people's replicas over the *OkuNet* when they leave notes on pages that they intend to share with their followers. You can follow or block users using their *authorship IDs*, and only see the posts made by those who you follow and whoever they follow, excluding anyone you've blocked. While the OkuNet resembles a social media platform, in that you can make, edit, delete, or search for posts while sharing the same identity across your devices, there is no central service. This means that it's on you to cultivate your experience because there's nobody else to do it for you.
+
+[Oku is now available on Flathub](https://flathub.org/apps/io.github.OkuBrowser.oku) for Linux users. If you're able to install Oku, your feedback is encouraged as it will guide the future of the project.
+
+### The Future
+
+Oku is not a finished product. It's missing features most would expect a browser to have, and features that would complement its unique capabiltiies as well. It needs polish, maintenance, and governance going forward. Most importantly, it needs to overcome big obstacles for adoption:
+
+1. **Safety**, both with regards to safeguarding user privacy and promoting ethical usage of the technology. Users should have peace of mind that they will not have their personal information visible without their knowledge, potentially compromising their physical safety, and users should also be safe from unintentionally encountering objectionable material, including abuse material. Empowering users in this domain requires a long-term interdisciplinary effort involving software developers, ethicists, policymakers, and more.
+2. **Greater platform support**, as most individuals who would benefit from Oku are not using Linux systems. While significant consideration has been paid to this as I've developed Oku, the time and effort necessary to overcome the technical obstacles here are beyond that of a single individual.
+
+These are challenges that can be overcome with access to greater resources than I singularly have.
+
+Oku is seeking contributions from:
+* **Users** - Your feedback and support is invaluable to open-source projects like Oku. If you consider Oku to be quality software, please help sustain its development [by donating](https://github.com/sponsors/emmyoh).
+* **Mentors** – Mentorship & guidance from anyone–including open-source maintainers, non-profit administrators, founders, or engineers–is much desired. Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
+* **Developers** – Your expertise is needed in porting Oku to more platforms. If you're able to assist with getting WebKitGTK compiling on macOS or Windows, or if you're able to assist with embedding Servo as a GTK component, please [reach out](mailto:limesayahi@gmail.com).
+* **Artists** - Branding for Oku, including a logo, would be highly appreciated. I'm a lot better at writing code than I am attempting to draw. Additionally, design concepts for virtual avatars that could be integrated into OkuNet would be amazing. Please [post any art to GitHub Discussions](https://github.com/OkuBrowser/oku/discussions/new?category=show-and-tell).
+* **Investors** - Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
+
+Thank you for your interest in Oku.
+
+Kind regards,
+
+Emil
+
+{% endmarkdown %}
