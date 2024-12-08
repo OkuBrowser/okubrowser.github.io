@@ -47,6 +47,6 @@ Powered by WebKit, Oku is a genuine alternative to Google Chrome, not a derivati
 
 Oku is free and open-source software, [accepting code contributions on GitHub]({{ global.browser_repository }}).
 
-[Learn more about Oku →]({{ global.url }}/about)
+[Learn more about Oku →]({{ global.url }}/faq)
 
 {% endmarkdown %}

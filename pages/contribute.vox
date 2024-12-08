@@ -1,0 +1,17 @@
+---
+layout = "default"
+permalink = "contribute/index.html"
+---
+
+{% markdown %}
+
+[← Back to home page]({{ global.url }})
+
+Oku is seeking contributions from:
+* **Users** - Your feedback and support is invaluable to open-source projects like Oku. If you consider Oku to be quality software, please help sustain its development [by donating]({{ global.sponsor_link }}).
+* **Mentors** – Mentorship & guidance from anyone—including open-source maintainers, non-profit administrators, founders, or engineers—is much desired. Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
+* **Developers** – Your expertise is needed! If you're able to assist with any of [the items on the project roadmap]({{ global.browser_repository }}/discussions/330), please [create a pull request]({{ global.browser_repository }}/compare).
+* **Artists** - Branding for Oku, including a logo, would be highly appreciated. I'm a lot better at writing code than I am attempting to draw. Additionally, design concepts for virtual avatars that could be integrated into OkuNet would be amazing. Please [post any art to GitHub Discussions](https://github.com/OkuBrowser/oku/discussions/new?category=show-and-tell).
+* **Investors** - Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
+
+{% endmarkdown %}

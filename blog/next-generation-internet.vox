@@ -33,7 +33,7 @@ Oku is not a finished product. It's missing features most would expect a browser
 These are challenges that can be overcome with access to greater resources than I singularly have.
 
 Oku is seeking contributions from:
-* **Users** - Your feedback and support is invaluable to open-source projects like Oku. If you consider Oku to be quality software, please help sustain its development [by donating](https://github.com/sponsors/emmyoh).
+* **Users** - Your feedback and support is invaluable to open-source projects like Oku. If you consider Oku to be quality software, please help sustain its development [by donating]({{ global.sponsor_link }}).
 * **Mentors** – Mentorship & guidance from anyone–including open-source maintainers, non-profit administrators, founders, or engineers–is much desired. Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
 * **Developers** – Your expertise is needed in porting Oku to more platforms. If you're able to assist with getting WebKitGTK compiling on macOS or Windows, or if you're able to assist with embedding Servo as a GTK component, please [reach out](mailto:limesayahi@gmail.com).
 * **Artists** - Branding for Oku, including a logo, would be highly appreciated. I'm a lot better at writing code than I am attempting to draw. Additionally, design concepts for virtual avatars that could be integrated into OkuNet would be amazing. Please [post any art to GitHub Discussions](https://github.com/OkuBrowser/oku/discussions/new?category=show-and-tell).

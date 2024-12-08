@@ -1,6 +1,6 @@
 ---
 layout = "default"
-permalink = "about/index.html"
+permalink = "faq/index.html"
 ---
 
 {% markdown %}
