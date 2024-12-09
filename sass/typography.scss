@@ -17,7 +17,7 @@ h5,
 h6 {
     font-family: "Poppins", sans-serif;
     margin-bottom: .5rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.25;
     color: var(--heading-color);
 }
@@ -50,7 +50,7 @@ em {
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 ul {
@@ -82,7 +82,7 @@ hr {
 abbr {
     font-size: 85%;
     font-weight: bold;
-    color: var(--gray-600);
+    color: var(--dark-3);
     text-transform: uppercase;
 
     &[title] {
@@ -94,7 +94,7 @@ abbr {
 blockquote {
     padding: .5rem 1rem;
     margin: .8rem 0;
-    color: var(--gray-500);
+    color: var(--dark-2);
     border-left: .25rem solid var(--border-color);
 
     p:last-child {

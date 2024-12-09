@@ -1,10 +1,22 @@
-<header class="masthead center">
-    <h3 class="masthead-title">
-        <a href="{{ global.url }}" title="Home">{{ global.title }}</a>
-        <small>{{ global.description }}</small>
-    </h3>
-    <small><a href="{{ global.url }}/guide" title="Guide">guide</a></small>
-    <small><a href="{{ global.url }}/faq" title="FAQ">faq</a></small>
-    <small><a href="{{ global.url }}/blog" title="Blog">blog</a></small>
-    <small><a href="{{ global.url }}/contribute" title="Contribute">contribute</a></small>
+<header class="masthead">
+    <nav>
+        <div class="masthead-left">
+            <a href="{{ global.url }}" title="Home">
+                <div class="masthead-title">
+                    <img src="https://raw.githubusercontent.com/OkuBrowser/oku/refs/heads/master/branding/logo-filled.svg" width="32px">
+                    <h3>{{ global.title }}</h3>
+                </div>
+            </a>
+            <ul class="masthead-ul">
+                <li class="masthead-li"><a href="{{ global.url }}/guide" title="Guide">Guide</a></li>
+                <li class="masthead-li"><a href="{{ global.url }}/faq" title="FAQ">FAQ</a></li>
+                <li class="masthead-li"><a href="{{ global.url }}/blog" title="Blog">Blog</a></li>
+                <li class="masthead-li"><a href="{{ global.url }}/contribute" title="Contribute">Contribute</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <small></small>
+    <small></small>
+    <small></small>
+    <small></small> -->
 </header>

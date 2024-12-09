@@ -47,47 +47,57 @@
     --dark-5: #000000;
 }
 
+/* Apple colours */
 :root {
-    --gray-000: #f8f9fa;
-    --gray-100: #f1f3f5;
-    --gray-200: #e9ecef;
-    --gray-300: #dee2e6;
-    --gray-400: #ced4da;
-    --gray-500: #adb5bd;
-    --gray-600: #868e96;
-    --gray-700: #495057;
-    --gray-800: #343a40;
-    --gray-900: #212529;
-    --red: #fa5252;
-    --pink: #e64980;
-    --grape: #be4bdb;
-    --purple: #7950f2;
-    --indigo: #4c6ef5;
-    --blue: #228be6;
-    --cyan: #15aabf;
-    --teal: #12b886;
-    --green: #40c057;
-    --yellow: #fab005;
-    --orange: #fd7e14;
-    --blue-300: #74c0fc;
-    --blue-400: #4dabf7;
-    --yellow-100: #fff3bf;
+    --red: rgb(255, 59, 48);
+    --orange: rgb(255, 149, 0);
+    --yellow: rgb(255, 204, 0);
+    --green: rgb(52, 199, 89);
+    --mint: rgb(0, 199, 190);
+    --teal: rgb(48, 176, 199);
+    --cyan: rgb(50, 173, 230);
+    --blue: rgb(0, 122, 255);
+    --indigo: rgb(88, 86, 214);
+    --purple: rgb(175, 82, 222);
+    --pink: rgb(255, 45, 85);
+    --brown: rgb(162, 132, 94);
+    --gray: rgb(142, 142, 147);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --red: rgb(255, 69, 58);
+        --orange: rgb(255, 159, 10);
+        --yellow: rgb(255, 214, 10);
+        --green: rgb(48, 209, 88);
+        --mint: rgb(99,230, 226);
+        --teal: rgb(64, 200, 224);
+        --cyan: rgb(100, 210, 255);
+        --blue: rgb(10, 132, 255);
+        --indigo: rgb(94, 92, 230);
+        --purple: rgb(191, 90, 242);
+        --pink: rgb(255, 55, 95);
+        --brown: rgb(172, 142, 104);
+        --gray: rgb(142, 142, 147);
+    }
+}
+
+:root {
     --body-font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --body-line-height: 1.5;
     --border-radius: .25rem;
     --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --code-color: var(--grape);
-    --code-bg: var(--gray-900);
+    --code-color: var(--indigo);
+    --code-bg: var(--dark-4);
     --spacer: 1rem;
     --spacer-2: calc(var(--spacer) * 1.5);
     --spacer-3: calc(var(--spacer) * 3);
-    --body-bg: linear-gradient(var(--pico-color-red-100), var(--pico-color-red-100), var(--pico-color-red-150));
-    --body-bg-color: var(--pico-color-red-100);
-    --body-color: var(--gray-800);
-    --link-color: var(--pico-color-pink-500);
-    --link-hover-color: var(--pico-color-pink-650);
-    --heading-color: var(--gray-900);
-    --border-color: var(--gray-700);
+    --body-bg: #e5e5e5;
+    --header-color: var(--light-1);
+    --body-color: var(--dark-3);
+    --link-color: var(--pink);
+    --link-hover-color: var(--red-5);
+    --heading-color: var(--dark-4);
+    --border-color: var(--dark-2);
     --container-bg: rgba(255, 255, 255, 0.45);
     --bookmarks-screenshot: url('/assets/screenshots/light/bookmarks.png');
     --find-in-page-screenshot: url('/assets/screenshots/light/find_in_page.png');
@@ -107,13 +117,13 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --body-bg: linear-gradient(var(--pico-color-purple-950), var(--pico-color-purple-950), var(--pico-color-purple-900));
-        --body-bg-color: var(--pico-color-purple-950);
-        --body-color: var(--gray-000);
-        --link-color: var(--pico-color-amber-250);
-        --link-hover-color: var(--pico-color-amber-200);
-        --heading-color: var(--gray-000);
-        --border-color: var(--gray-300);
+        --body-bg: #181818;
+        --header-color: var(--dark-5);
+        --body-color: var(--light-1);
+        --link-color: var(--orange);
+        --link-hover-color: var(--yellow);
+        --heading-color: var(--light-1);
+        --border-color: var(--light-3);
         --container-bg: rgba(255, 255, 255, 0.33);
         --bookmarks-screenshot: url('/assets/screenshots/dark/bookmarks.png');
         --find-in-page-screenshot: url('/assets/screenshots/dark/find_in_page.png');

@@ -1,12 +1,13 @@
-<div class="gallery center">
+<div class="gallery">
   {% for post in include.posts %}
-  <a href="{{ post.url | prepend: "/" | prepend: global.url }}">
+  <a href="{{ post.url | prepend: "/" | prepend: global.url }}" class="center">
     <article class="gallery-post container">
       {% if post.data.screenshot %}
       <figure>
           <img class="{{ post.data.screenshot }}-screenshot screenshot" alt="{{ post.data.title }}">  
       </figure>
       {% endif %}
+      <div></div>
       <h1 class="post-title">
         {{ post.data.title }}{%- if post.data.icon %}&nbsp;{% include icon.html name=post.data.icon %}{%- endif -%}
       </h1>

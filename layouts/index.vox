@@ -8,7 +8,7 @@
     <body>
         <a id="skip" href="#skip-target">Skip to main content</a>
         {% include header.html %}
-        <div class="container glass center" id="skip-target">
+        <div id="skip-target">
             {% assign output_name = page.url | split: "/" | last %}
             {% if output_name != 'index.html' %}
                 {% if page.collections.first %}
@@ -21,7 +21,7 @@
         </div>
         <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
     </body>
-    <footer class="container">
+    <footer class="container content">
         <small>
             &copy; {{ global.author }} <time datetime="{{ meta.date.rfc_2822 }}">{{ meta.date.year }}</time>
         </small>

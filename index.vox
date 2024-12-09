@@ -3,50 +3,48 @@ layout = "index"
 permalink = "index.html"
 ---
 
-<img class="main-screenshot screenshot"></img>
+<div class="intro-box">
 
-{% markdown %}
+    <div class="intro-info">
+        <h1>{{ global.title }}</h1>
+        <h2>{{ global.description }}</h2>
+        <p>Unleash your creativity and join a network of users supporting an independent effort to reintroduce control, privacy, & free expression online.</p>
+        <div>
+            <a href='https://flathub.org/apps/io.github.OkuBrowser.oku'>
+                <img width='120' style="display: inline;" alt='Get it on Flathub' src='https://flathub.org/api/badge?locale=en'/>
+            </a>
+            <small style="display: block;">Looking for macOS or Windows? Join <a href="https://forms.gle/toyf1N6zdWzSAdpH8">the waitlist</a>.</small>
+        </div>
+    </div>
+    <img class="main-screenshot screenshot"></img>
+</div>
 
-# Making browsing *fun* again.
+<div class="content center">
+    <div class="home-block">
+        <div class="home-block-info">
+            <h2>Build & publish sites, together.</h2>
+            <p>Create sites locally, edit them in real time, and publish changes instantly.</p>
+            <a href="{{ global.url }}/guide/Replicas.html">Explore replicas →</a>
+        </div>
+        <img class="replicas-screenshot screenshot"></img>
+    </div>
 
-* Create & publish sites
-* Share files directly with friends
-* Storing personal data on the devices you control
-* Synchronise files between your devices
+    <div class="home-block">
+        <div class="home-block-info">
+            <h2>Build a knowledge base as you browse.</h2>
+            <p>Take notes on what you view. Contextualise your browsing history.</p>
+            <a href="{{ global.url }}/guide/Notes.html">Explore notes →</a>
+        </div>
+        <img class="note-editor-screenshot screenshot"></img>
+    </div>
 
-### Make & share your own sites.
+    <div class="home-block">
+        <div class="home-block-info">
+            <h2>Build your own invite-only social network.</h2>
+            <p>Find & share sites through social bookmarking. Curate your feed. Search known sites locally.</p>
+            <a href="{{ global.url }}/guide/OkuNet.html">Explore the OkuNet →</a>
+        </div>
+        <img class="okunet-home-screenshot screenshot"></img>
+    </div>
 
-- Oku lets you create *replicas*, virtual drives that you can share online.
-- Replicas can contain anything, including photos, videos, or documents.
-- You can put a site in a replica and share it with the world.
-
-## *Your* data on *your* machine.
-
-### Let sites keep your information with you, not on servers they control.
-
-- Replicas are sent with *tickets*.
-- A *read-only ticket* can be used to view, but not edit, your replica.
-- A *read & write ticket* can be used to view or edit your replica.
-- Sites can keep your data with you in a replica by asking for a read & write ticket.
-
-## Let your garden grow wild.
-
-### Build your own space on the Internet, independent from social media platforms.
-
-- Replicas can be viewed by their ID.
-- Every time you visit a new replica, your browser saves its ID.
-- When you update a replica, those with its ID will see the newest version.
-
-## Not Google Chrome in disguise.
-
-Powered by WebKit, Oku is a genuine alternative to Google Chrome, not a derivative.
-
----
-
-# Looking to contribute?
-
-Oku is free and open-source software, [accepting code contributions on GitHub]({{ global.browser_repository }}).
-
-[Learn more about Oku →]({{ global.url }}/faq)
-
-{% endmarkdown %}
+</div>
