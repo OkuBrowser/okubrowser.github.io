@@ -25,7 +25,7 @@ You can find other people's replicas over the *OkuNet* when they leave notes on 
 
 ### The Future
 
-Oku is not a finished product. It's missing features most would expect a browser to have, and features that would complement its unique capabiltiies as well. It needs polish, maintenance, and governance going forward. Most importantly, it needs to overcome big obstacles for adoption:
+Oku is not a finished product. It's missing features most would expect a browser to have, and features that would complement its unique capabilities as well. It needs polish, maintenance, and governance going forward. Most importantly, it needs to overcome big obstacles for adoption:
 
 1. **Safety**, both with regards to safeguarding user privacy and promoting ethical usage of the technology. Users should have peace of mind that they will not have their personal information visible without their knowledge, potentially compromising their physical safety, and users should also be safe from unintentionally encountering objectionable material, including abuse material. Empowering users in this domain requires a long-term interdisciplinary effort involving software developers, ethicists, policymakers, and more.
 2. **Greater platform support**, as most individuals who would benefit from Oku are not using Linux systems. While significant consideration has been paid to this as I've developed Oku, the time and effort necessary to overcome the technical obstacles here are beyond that of a single individual.
@@ -34,8 +34,8 @@ These are challenges that can be overcome with access to greater resources than 
 
 Oku is seeking contributions from:
 * **Users** - Your feedback and support is invaluable to open-source projects like Oku. If you consider Oku to be quality software, please help sustain its development [by donating]({{ global.sponsor_link }}).
-* **Mentors** – Mentorship & guidance from anyone–including open-source maintainers, non-profit administrators, founders, or engineers–is much desired. Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
-* **Developers** – Your expertise is needed in porting Oku to more platforms. If you're able to assist with getting WebKitGTK compiling on macOS or Windows, or if you're able to assist with embedding Servo as a GTK component, please [reach out](mailto:limesayahi@gmail.com).
+* **Mentors** --- Mentorship & guidance from anyone---including open-source maintainers, non-profit administrators, founders, or engineers---is much desired. Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
+* **Developers** --- Your expertise is needed in porting Oku to more platforms. If you're able to assist with getting WebKitGTK compiling on macOS or Windows, or if you're able to assist with embedding Servo as a GTK component, please [reach out](mailto:limesayahi@gmail.com).
 * **Artists** - Branding for Oku, including a logo, would be highly appreciated. I'm a lot better at writing code than I am attempting to draw. Additionally, design concepts for virtual avatars that could be integrated into OkuNet would be amazing. Please [post any art to GitHub Discussions](https://github.com/OkuBrowser/oku/discussions/new?category=show-and-tell).
 * **Investors** - Please [get in touch](mailto:limesayahi@gmail.com) to set up a chat.
 

@@ -26,7 +26,7 @@ jobs:
         name: Install Grass and Vox
         run: |
             time cargo install grass
-            time cargo install --git https://github.com/emmyoh/vox --features="cli"
+            time cargo install --git global.ssg_repository --features="cli"
       - if: ${{ steps.cache-cargo-restore.outputs.cache-hit != 'true' }}
         name: Save Cargo cache
         uses: actions/cache/save@v4

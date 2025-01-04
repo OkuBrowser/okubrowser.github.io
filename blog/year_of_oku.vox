@@ -1,0 +1,61 @@
+---
+title = "A Year of Oku"
+date = 2025-01-05T00:00:00+00:00
+layout = "post"
+permalink = "date"
+---
+
+{% markdown %}
+
+---
+
+*Oku is a distributed knowledge management system for collaborative teams. The Oku browser is a rich client for the Oku network.
+For more details, [read the mission statement]({{ global.url }}/about).*
+
+---
+
+2024 was a significant year for Oku. Solid technical foundations have been laid, preparing the project for open-source contributions and increasing adoption in the year ahead.
+
+### In numbers
+#### [Browser]({{ global.browser_repository }})
+* 88 commits, 53,071 LOC added, 1,703 LOC removed
+#### [Node]({{ global.protocol_repository }})
+* 85 commits, 29,087 LOC added, 13,812 LOC removed
+#### [Vector database]({{ global.vector_db_repository }})
+* 50 commits, 6,035 LOC added, 3,254 LOC removed
+#### [Static site generator]({{ global.ssg_repository }})
+* 37 commits, 291,460 LOC added, 2,605 LOC removed
+
+Overall, that's 260 commits across four repositories, with 379,653 LOC added and 21,374 LOC removed.
+While that may not sound like a lot, it was the result of solo development over a year where I was either studying or working full-time for much of it. I'm additionally happy to report that, this year, (a) Oku received €5,000 through an NLnet NGI0 Entrust grant as part of the European Commission's Next Generation Internet Initiative, (b) the Oku browser has at least 880 installs on Linux, and (c) Oku has received 183 GitHub stars across its repositories.
+
+## Where has Oku been this past year?
+##### Oku started off 2024 as an endeavour to experiment with local-first media publishing, and in that time I've learned a lot. Here are some of the lessons I've learned.
+#### The beginning
+Initially, Oku was a browser with [IPFS](https://ipfs.tech/) support, allowing users to access [content-addressed](https://en.wikipedia.org/wiki/Content-addressable_storage) media from existing IPFS nodes. This solved a specific use case, accessing information after its source has become inaccessible, but it ultimately wasn't a valuable solution, as:
+- The information wasn't 'living'; Web pages accessed through IPFS are inherently static because they're addressed by the content itself.
+    - Content could be censored relatively easily by external authorities as a consequence.
+- **The issue with 'content discovery' isn't actually there---it's a supply problem! Finding archived Web content is a relatively niche and [sufficiently solved](https://web.archive.org/) use case which didn't need 'peer-to-peer' technologies.**
+
+So, I dropped IPFS and began experimenting with [Iroh](https://www.iroh.computer/), looking to make a browser that valued publishing media just as much as it valued browsing it, a [goal of the first Web browser](https://worldwideweb.cern.ch/worldwideweb/). My initial aim was to create a peer-to-peer file system that enabled mutable, distributed sites. To that end, I've been largely successful in my efforts, with [replicas]({{ global.url }}/guide/Replicas.html) having become a significant feature in Oku. I quickly realised, however, that from the replica many other capabilities emerge that fix the indirections that affect much of what we do online. Oku replicas not only facilitate file sharing, as many peer-to-peer technologies historically have, but they enable distributed knowledge management, effectively doing what Notion and Google Drive do but simultaneously and without the cost of using a centralised service.
+
+#### Getting experimental
+A lot of the lessons I learned at this point were technical. Oku is written in Rust, which shines at providing great abstractions to make relatively low-level work 'feel' high-level. I could write about what I learned with regards to peer-to-peer networking technology, but I frankly haven't had to learn much about how [distributed hash tables (DHTs)](https://en.wikipedia.org/wiki/Distributed_hash_table) or [NAT holepunching](https://en.wikipedia.org/wiki/Hole_punching_(networking)) is implemented. Instead, I learned a lot about memory safety and concurrency.
+
+The UI toolkit used by the Oku browser is [GTK](https://www.gtk.org/), which is single-threaded; it is consequently a frustratingly bad choice for a Web browser if you want it to perform well, but surprisingly the best option short of either writing separate UIs per platform or building an [Electron](https://www.electronjs.org/) application. Many times, I felt as if I had to compromise a lot on performance to safely mutate the state of the UI, but I've since learned the following:
+- Take advantage of [`LazyLock`](https://doc.rust-lang.org/stable/std/sync/struct.LazyLock.html) to globally access structures across your UI, and give them [interior mutability](https://doc.rust-lang.org/reference/interior-mutability.html) to avoid needing to make exclusive borrows.
+- Encapsulate much of your computationally-expensive functionality in structures that perform operations in parallel and send the results to the calling thread. This makes accessing the UI from its only thread more ergonomic; the computation is still multithreaded, but the UI thread will only block to update its own state.
+    - Parallelising with iterators is a common pattern; data structures with interior mutability make this possible as they can be safely mutated across threads if their members can.
+
+Returning to features that emerge from replicas, I created [the OkuNet]({{ global.url }}/guide/OkuNet.html) as a way for users to build up local indexes of content in an intuitive way. This [social bookmarking](https://en.wikipedia.org/wiki/Social_bookmarking) feature backs Oku's searching capabilities. To provide multimodal semantic searching in addition to text search, I needed an embedded vector database; I ended up building my own, as, rather surprisingly, the existing technology is not thoroughly developed. I've written [a detailed description of my motivations and implementation]({{ global.vector_db_repository}}/blob/543ed8bd4f88f4b5d7819ce7f4cdff18e5f8ec74/README.md), but suffice it to say, implementing semantic search & content recommendation with scale in mind is shockingly difficult despite its popularity and I hope my approach will be validated in the future.
+
+## Where is Oku going in the next year?
+
+Well, *I'm* heading off to London for my honeymoon until 20 January, but after I return home to the US I plan on tackling [the many items on the project roadmap]({{ global.browser_repository }}/discussions/330) throughout the next year. I hope to get a more stabilised version of Oku with its current feature-set into users' hands as soon as possible so that I can gather valuable user feedback on what works, what could be improved, and what isn't useful in practice---the distributed computing space has had a tragic history of building things that nobody wants (yet) and I'd rather Oku not be another such project. In addition, I hope to develop a closer relationship with those in the same ecosystems, such as [Igalia](https://www.igalia.com/), [the GNOME Project](https://www.gnome.org/) and [Number Zero](https://n0.computer/) to help each other advance aspects of our projects' missions.
+
+With regards to what will be *built* next, I want to prioritise getting as much of Oku's capabilities into as many hands as possible. To that end, the cross-platform command-line interface should continue to receive as much attention and support as the browser, so long as the browser remains confined to Linux. It is, of course, a very interesting time for browsers as well, with machine learning advancements and potential funding issues for Google Chrome and Mozilla Firefox making the browser itself ripe grounds for disruption.
+
+*If you find potential in Oku and want its development to continue, please [consider supporting it]({{ global.url }}/contribute) as it would not be possible otherwise.\
+I can be reached via [email](mailto:limesayahi@gmail.com) or [Bluesky](https://bsky.app/profile/sayahi.bsky.social).*
+
+{% endmarkdown %}

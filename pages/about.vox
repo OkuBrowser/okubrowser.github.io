@@ -1,0 +1,43 @@
+---
+layout = "default"
+permalink = "about/index.html"
+---
+
+{% markdown %}
+
+[← Back to home page]({{ global.url }})
+
+The Internet as it exists today is filled with [leaky abstractions](https://en.wikipedia.org/wiki/Leaky_abstraction) that make our lives harder. Hosting files, sharing them, and collaboratively editing them are burdensome endeavours that cost time & money due to [the reliance on central authorities: servers](https://en.wikipedia.org/wiki/Client%E2%80%93server_model). Dedicated servers experience downtime and security breaches, while cloud providers introduce hidden costs, configuration challenges, and a lack of oversight & governance.
+
+Oku aims to address the failings of the client-server paradigm, offering:
+* Authority over your own data without the need to trust a third-party
+* Painless migration; no vendor lock-in, as your files are yours
+* Fault-tolerance in the network when nodes go offline
+* Simplified identity & access management
+* Painless communication across NAT
+
+**Oku is a distributed knowledge management system for collaborative teams**, enabling:
+* Collaborative file editing
+* Fault-tolerant file hosting that scales
+* Social bookmarking
+* Document search & discovery
+
+[Source Code →]({{ global.protocol_repository }})
+
+The Web has evolved with the client-server paradigm, having become increasingly reliant on advertising revenue to fund the infrastructure costs associated with hosting. The ad-supported model of Web hosting has introduced incentives for service providers to degrade the user experience, manifesting in search engines that provide [clickbait](https://en.wikipedia.org/wiki/Clickbait) results, and social media platforms that [penalise content discovery to keep users on their platforms](https://en.wikipedia.org/wiki/Attention_economy).
+
+**The Oku browser is a [rich client](https://en.wikipedia.org/wiki/Rich_client) for the Oku network**; it repurposes Web technology to promote human agency by:
+* Making content creation & distribution accessible to all
+* Extending the lifespan of information, keeping media accessible until the last copy is lost
+* Allowing individual users to control what information they wish to discover
+
+The Oku browser provides a parallel space to the Web where information is served by its authors. This allows for:
+* [Collaboratively building & publishing sites in real time without hosting fees]({{ global.url }}/guide/Replicas.html)
+* Distributed search & social media without ads
+* Private, on-device browsing recommendations tailored to your interests
+
+[Source Code →]({{ global.browser_repository }})
+
+[Frequently Asked Questions →]({{ global.url }}/faq)
+
+{% endmarkdown %}
